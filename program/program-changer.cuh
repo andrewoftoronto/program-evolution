@@ -72,7 +72,7 @@ public:
             program.constants.push_back(value);
 
         // Remove a constant.
-        } else if (operation == 2 && !program.constants.size() > 2) {
+        } else if (operation == 2 && program.constants.size() >= 2) {
             unsigned int loc = uniformInt<unsigned int>(0, 
                     program.constants.size() - 1, r);
             auto deleteSpot = program.constants.begin() + loc;

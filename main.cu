@@ -75,7 +75,7 @@ int main() {
     const unsigned int MAX_INSTRUCTIONS = 256;
     const unsigned int MAX_CONSTANTS = 16;
     const unsigned int MAX_VARIABLES = 16;
-    const unsigned int MAX_PROGRAMS = 256;
+    const unsigned int MAX_PROGRAMS = 1024;
     const unsigned int NUM_INPUTS = 1;
     const unsigned int NUM_OUTPUTS = 1;
     const unsigned int GRID_SIZE = 4;
@@ -133,7 +133,7 @@ int main() {
 
     EvolutionEnvironment::ProblemInfo info = {scoreHook, MAX_INSTRUCTIONS, 
             MAX_CONSTANTS, NUM_INPUTS, MAX_VARIABLES, NUM_OUTPUTS};
-    EvolutionEnvironment environment(info, 256, MAX_PROGRAMS);
+    EvolutionEnvironment environment(info, 64, MAX_PROGRAMS);
     for (unsigned int i = 0; i < 100000; i++) {
         environment.iterate();
     }

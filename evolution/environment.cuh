@@ -39,6 +39,13 @@ public:
         unsigned int numOutputs;
     };
 
+    /**
+    * @brief Number of programs to periodically report in json format.
+    * 
+    * It is safe to edit this field as desired.
+    */
+    unsigned int topNToReport = 1;
+
 private:
 
     // Associates a program with its score.
@@ -145,7 +152,7 @@ public:
                     survivalSet[0].second);
         }
         if (iteration % 1000 == 999) {
-            printf("%s\n", exportJSON(1).c_str());
+            printf("%s\n", exportJSON().c_str());
         }
 
         iteration++;
@@ -154,17 +161,17 @@ public:
 private:
 
     /**
-    * @brief Export top-n programs into a different format.
+    * @brief Export top-n programs in JSON format.
     * 
-    * @param topN number of programs to export.
+    * @return string representation of the programs in JSON format.
     */
-    std::string exportJSON(unsigned int topN) const {
-
+    std::string exportJSON() const {
         using json = nlohmann::json;
         using namespace nlohmann::literals;
 
         json::array_t programJSONs;
-        for (unsigned int i = 0; i < std::min<unsigned int>(topN, survivalSet.size()); i++) {
+        unsigned int numToReport = std::min<unsigned int>(topNToReport, survivalSet.size());
+        for (unsigned int i = 0; i < numToReport; i++) {
             const MutableProgram& program = survivalSet[0].first;
 
             json::array_t instructions;
