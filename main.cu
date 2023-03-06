@@ -7,6 +7,10 @@
 
 /// This is a demo application that demonstrates how to use this program 
 /// evolution software.
+///
+/// The objective of this demo is to create a program that blurs the 4 cardinal
+/// neighbours of each point:
+///     Output = (Top + Bottom + Left + Right) / 4
 
 const unsigned int NUM_TEST_CASES = 4;
 const unsigned int GRID_SIZE = 4;
