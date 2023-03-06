@@ -23,12 +23,12 @@ Usage:
 - bin/test-program-device.exe for unit tests
 
 Overview:
-main.cu: runs evolution in a demo application.
-test-program-device.cu: unit tests for running the program on the device (CUDA).
-doctest.h, json.h: header-only dependencies (credited below).
-util/: miscellaneous useful utility classes and functions.
-evolution/: handles the evolutionary algorithm.
-program/: manages programs, how to mutate them, and how to run them on the device.
+- main.cu: runs evolution in a demo application.
+- test-program-device.cu: unit tests for running the program on the device (CUDA).
+- doctest.h, json.h: header-only dependencies (credited below).
+- util/: miscellaneous useful utility classes and functions.
+- evolution/: handles the evolutionary algorithm.
+- program/: manages programs, how to mutate them, and how to run them on the device.
 
 Future Work:
 - Simulate isolated biomes, ecological niches, etc. to promote diversity.
