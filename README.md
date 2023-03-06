@@ -9,7 +9,7 @@ Presently, only one boundary condition is supported - a value of 0 is returned w
 
 Right now, the evolutionary algorithm is simple, featuring just a single listing where programs compete. At each generation, the top N scoring programs survive to stay in the listing and to generate candidates for the next generation. A simple combination and mutation procedure is implemented. Periodically, the top scoring programs are reported in JSON format. 
 
-The demo application attempts to find a program that can blur the 4 cardinal neighbouring cells such that:
+The demo application attempts to find a program that can blur the 4 cardinal neighbouring cells such that:\
 Output = (Top + Bottom + Right + Left) / 4
 
 It is structured such that it runs the program against a series of training cases with input and output examples. The training goal (score function) attempts to minimize the L1 distance between the program's output and the examples' output. Variables are cleared before running each training case.
