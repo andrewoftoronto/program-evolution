@@ -1,0 +1,2 @@
+nvcc main.cu --std c++17 -I . --output-directory bin/ --output-file bin/program-evolution.exe
+nvcc test-program-device.cu --std c++17 -I . --output-directory bin/ --output-file bin/test-program-device.exe
