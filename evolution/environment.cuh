@@ -1,7 +1,7 @@
 #pragma once
 #include "util/util.cuh"
 #include "program/program-changer.cuh"
-#include "jsoncpp.h"
+#include "json.h"
 #include <vector>
 #include <assert.h>
 #include <optional>
