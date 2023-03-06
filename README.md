@@ -31,6 +31,7 @@ Overview:
 - program/: manages programs, how to mutate them, and how to run them on the device.
 
 Future Work:
+- Support complexity penalties.
 - Simulate isolated biomes, ecological niches, etc. to promote diversity.
 - Ability to stop and resume.
 - Support more boundary conditions.
