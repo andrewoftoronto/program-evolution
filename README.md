@@ -42,5 +42,5 @@ Future Work:
 - Unit Tests for program mutation and evolutionary algorithm.
 
 Direct External Credits:
-https://github.com/nlohmann/json: for writing out the evolving programs in JSON format.
-https://github.com/doctest/doctest: for unit tests.
+- https://github.com/nlohmann/json: for writing out the evolving programs in JSON format.
+- https://github.com/doctest/doctest: for unit tests.
