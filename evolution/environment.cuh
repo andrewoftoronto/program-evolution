@@ -147,6 +147,7 @@ public:
                 survivalSet.end());
         assert(survivalSet.size() <= surviveSetSize);
 
+        // Report results periodically.
         if (iteration % 100 == 0) {
             printf("Iteration: %d; Best Score: %f\n", iteration, 
                     survivalSet[0].second);

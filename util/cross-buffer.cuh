@@ -43,8 +43,7 @@ public:
 	bool ownsHostBuffer;
 
 	/**
-	* @brief Indicates if the host buffer is owned by this and thus should be
-	* 	automatically destructed when this is destructed.
+	* @brief Indicates if the device buffer is owned by this.
 	*/
 	bool ownsDeviceBuffer;
 

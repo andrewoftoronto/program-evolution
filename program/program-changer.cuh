@@ -23,12 +23,6 @@ class ProgramChanger {
     std::default_random_engine r;
 
 public:
-    /**
-    * @brief Constructs the ProgramChanger module.
-    */
-    ProgramChanger() {
-        
-    }
 
     /**
     * @brief Mutate the Program in place, performing one random modification.
