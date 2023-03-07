@@ -18,6 +18,7 @@ Although the demo only runs programs once for each training case, variables can 
 
 Usage:
 - Install latest CUDA on your system
+- Clone this repository
 - ./build.bat (tested on windows but should be trivial to modify to run on unix platforms)
 - bin/program-evolution.exe for demo application
 - bin/test-program-device.exe for unit tests
